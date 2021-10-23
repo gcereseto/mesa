@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 3;
+    padding: 0;
+  }
+/* Paleta de colores Guía */
+:root 
+
+--color1 {color: #20a8d8;}
+--color2 {color: #17a88f;}
+--color3 {color: #3ac16d;}
+--color4 {color: #cfd977;}
+--color5 {color: #f2d688;}
+--color6 {color: #fafafa;}
+--color7 {color: #000000;}
+
+body{
+font-family: 'Roboto', sans-serif;
+background-color: #ffffff;
+}
+
+/* NAVEGADOR */
+
+nav{
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 120px;
+
+}
+
+a {
+  color: #17a88f;
+  font-size: 20px;
+  text-decoration: none;
+  text-decoration-line:overline;
+}
+
+img {
+  width: 100%;
+  }
+/* LOGO Y FOTO EDIFICIO */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:  1fr;
+    gap: 5px;
+    min-height: 250px;
+}
+
+#h1{
+  color: #20a8d8;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.frases {
+  grid-column: 1;
+  grid-row:2/3
+  color #17a88f;
+  font-size: 26px;;
+  padding: 1em;
+ 
+  }
+.logo{
+  grid-column:1
+  grid-row:1
+padding: 1px
+;
+}
+#foto {
+     grid-column: 2/3;
+  grid-row: 1/3;
+   background-size: cover;
+   display: flex;
+  flex-flow: column;
+     justify-content: flex-end;
+}
+
+
+
+/* LO QUE HACEMOS*/
+
+#card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: #f2d688;
+  text-align: center;
+  max-width: calc(90% / 4);
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  }
+
+  
+.foto {
+  max-width: 200px;
+  }
+  
+  /* NOSOTROS Y LO QUE LOGRAMOS*/
+
+#card2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card2-item {
+  background-color: #cfd688;
+  text-align: center;
+  max-width: calc(90% / 4);
+  padding: 10px;
+}
+  
+/* PODÉS SER INVERSOR*/
+
+    #invitacion {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      background-color: white;
+      margin: 10px 0px;
+      }
+
+      #bienvenida {
+       grid-column: 1/2;
+       align-self: center;
+       }
+
+       #consultas {
+        grid-column: 2/3;
+      align-self: center;
+      padding: 1em;
+      }
+  
+   
+.texto{
+  /* color: #17a88f; */
+  font-size: 20px;
+  font-weight:bold;
+  padding: 1em
+
+}
+   
+.formdata{
+
+  font-size: 20px ;
+  font-weight: bold;
+  padding: 1em
+}
+
+/* FOOTER */
+
+footer {
+  margin-bottom: 3 rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #f2d688;
+  background-color: #000000;
+}
+
+
+@media (max-width: 860px) {
+  nav{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 60px;
+  
+  }
+
+  
+a {
+  color: #17a88f;
+  font-size: 17px;
+  text-decoration: none;
+
+}
+
+
+#h1{
+  color: #20a8d8;
+  font-size: 26px;
+  font-weight: bold;
+    }
+     
+    
+    #card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .card-item {
+        max-width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          justify-items:auto;
+          column-gap: 10px;
+          row-gap: 10px;
+          max-width: 100%;
+      }
+      #card2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            justify-items: stretch;
+            column-gap: 10px;
+            row-gap: 10px;
+          }
+      .card2-item {
+            max-width: 100%;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto;
+              justify-items:auto;
+              column-gap: 10px;
+              row-gap: 10px;
+              max-width: 100%;
+    }
+  
+    
+    @media (max-width: 500px){
+      nav{
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 20px 60px;
+      
+      }
+    a {
+    color: #17a88f;
+    font-size: 15px;
+    text-decoration: none;
+    
+    }
+    
+
+    #h1{
+      color: #20a8d8;
+      font-size: 22px;
+      font-weight: bold;
+        }
+
+      #card {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .card-item {
+        max-width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          justify-items: stretch;
+          column-gap: 10px;
+          row-gap: 10px;
+          max-width: 100%;
+       
+      }
+      
+      #card2 {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .card2-item {
+        max-width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          justify-items: stretch;
+          column-gap: 10px;
+          row-gap: 10px;
+          max-width: 100%;
+       
+      } 
+    

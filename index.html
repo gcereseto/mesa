@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <title>Inicio</title>
+  <link rel="icon" href="images/Logos/G-gestion.png" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class=navegador>
+    <a href="#hacemos">Lo que hacemos</a>
+    <a href="#logramos">Nosotros y lo que logramos</a>
+    <a href="#inversor">Podés ser inversor</a>
+
+  </nav>
+
+
+  <header>
+
+    <div class="frases">
+      <span id="h1">Gestión de recuperos de carteras de créditos distress</span>
+      <br>
+    </div>
+    <div class=logo>
+
+      <p><img src="images/Logos/logo-gestion2.png" width=200 alt="logo Gestión" /></p>
+
+    </div>
+    <div id="foto">
+      <p><img src="images/Logos/FrenteGST.jpg" width=200 alt="" /></p>
+
+    </div>
+
+
+  </header>
+  <!-- LO QUE HACEMOS -->
+  <h2><a id="hacemos"></a>Lo que hacemos</h2>
+  <div id="card">
+    <div class="card-item">
+      <img class="foto" src="images/Hacemos/pexels-karolina-grabowska-4386158.jpg" alt="Cartera distress">
+      <h4>Cartera distress</h4>
+      <p>Invertimos fondos en la compra de carteras distress que aprueben nuestro análisis estratégico del negocio.</p>
+    </div>
+    <div class="card-item">
+      <img class="foto" src="images/Hacemos/pexels-yan-krukov-7698828.jpg" alt="Fideicomisos financieros">
+      <h4>Fideicomisos financieros</h4>
+      <p>Estructuramos y constituimos fideicomisos financieros como vehículo de inversión para tener una estructura
+        legal segura.</p>
+    </div>
+    <div class="card-item">
+      <img class="foto" src="images/Hacemos/pexels-rodnae-productions-7948046.jpg" alt="Proyección y estrategias">
+      <h4>Proyección de cobros y definición de estrategias</h4>
+      <p>Definimos estrategias, proyección de cobros, vías de comunicación y canales cobro de los deudores según su
+        situación en el sistema financiero argentino. </p>
+    </div>
+    <div class="card-item">
+      <img class="foto" src="images/Hacemos/pexels-anna-nekrashevich-6802048.jpg" alt="Armado de teams">
+      <h4>Teams propios y contratados</h4>
+      <p>Conformamos los equipos propios y contratados que sean necesarios para ejecutar el plan de cobro</p>
+    </div>
+  </div>
+
+  <!-- NOSOTROS Y LO QUE LOGRAMOS -->
+  <h2><a id="logramos"></a>Nosotros y lo que logramos</h2>
+  <div id="card2">
+    <div class="card2-item">
+      <img class="foto" src="images/Nosotros/pexels-fauxels-3184299.jpg" alt="Equipo">
+      <h4>Nosotros</h4>
+      <p>Somos un equipo de profesionales en Finanzas, Tecnología y Capital Humano, en búsqueda permanente de la
+        superación de nuestras propias metas.</p>
+    </div>
+    <div class="card2-item">
+      <img class="foto" src="images/Nosotros/pexels-ron-lach-8681896.jpg" alt="Call center">
+      <h4>Call Center</h4>
+      <p>Contamos con tecnología de comunicaciones, software y equipos de contingencias de altos estándares de
+        eficiencia y seguridad.</p>
+    </div>
+    <div class="card2-item">
+      <img class="foto" src="images/Nosotros/pexels-rodnae-productions-7947958.jpg" alt="Gráficos">
+      <h4>Alto retorno sobre la inversión</h4>
+      <p>Obtuvimos una alta rentabilidad en 2020: alcanzamos TIR 22% luego de descontar la inflación. </p>
+    </div>
+    <div class="card2-item">
+      <img class="foto" src="images/Nosotros/pexels-sora-shimazaki-5673488.jpg" alt="Confianza">
+      <h4>Alcanzamos expectativas</h4>
+      <p>Siempre alcanzamos las expectativas de nuestros inversores lo que nos permite renovar la confianza que tienen
+        en nosotros.</p>
+    </div>
+  </div>
+  <h2><a id="inversor"></a>Podés ser inversor</h2>
+
+  <div id="invitacion">
+
+    <div id="bienvenida">
+      <img src="images/Inversor/pexels-max-vakhtbovych-7018400.jpg" alt="Invitación">
+    </div>
+
+
+    <div id="consultas">
+      <p class="texto">Si estás interesado en ser inversor, o tenés consultas para hacernos, un ejecutivo te contactará.
+      </p>
+      <p class="texto">Dejanos tus datos:
+      </p>
+      <form action="mailto:inversores@gestion.com.ar?Subject=Mis%20datos%20Inversor" method="post" enctype="text/plain">
+        <div class="formdata">
+          <label for="Nombres">NOMBRES</label>
+          <input type="text" name="Nombres" id="Nombres" size="50" pattern="[A-Za-z]{2,25}"
+            placeholder="Ingresá tu/s nombre/s" required /><br />
+          <label for="Apellido">APELLIDO</label>
+          <input type="text" name="Apellido" id="Apellido" size="50" pattern="[A-Za-z]{2,25}"
+            placeholder="Ingresá tu apellido" required /><br />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" size="30" placeholder="-------------@-------.---.--" /><br />
+
+          <label for="nrotel">Teléfono móvil, sin 0 ni 15:</label>
+          <input type="tel" name="nrotel" id="nrotel" pattern="[0-9]{10}" placeholder="10 dígitos numéricos" size="15"
+            required /><br />
+
+          <input type="submit" name="send" id="send" value="Enviar datos" />
+          <input type="reset" name="clear" id="clear" value="Borrar datos" />
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+  <footer>
+    Web: Gabriel Cereseto 2021 <br> GESTIÓN DE PRÉSTAMOS Y COBRANZAS S.A.<br> GST Grupo financiero
+  </footer>
+
+  <script src="validate.js"></script>
+</body>
+
+</html>
